@@ -29,7 +29,7 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
       console.log(`Logged in as ${client.user.tag}`);
     });
 
-    // Welcome message on guild join removed as requested
+  
 
     client.on(Events.InteractionCreate, async interaction => {
       if (!interaction.isChatInputCommand()) return;
@@ -63,8 +63,8 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
             name: '⚡ Quick Links', 
             value: `
             🔗 [Developer Portal](https://discord.com/developers/applications)
-            📚 [Documentation](https://discord.js.org/)
-            💡 [Support Server](https://discord.gg/discord-developers)
+            📚 [Our website](https://roxy-selfbot.vercel.app/)
+            💡 [Support Server](https://discord.gg/hZf4j8GzzK)
             `, 
             inline: true 
           },
@@ -72,17 +72,17 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
             name: '🎯 Badge Benefits', 
             value: `
             ✨ Exclusive profile badge
-            🎖️ Developer recognition
-            🚀 Community status
+            🎖️ Community status
+            🚀 flex maybe
             `, 
             inline: true 
           }
         )
-        .setColor('#00D4AA') // Discord's brand green color
-        .setThumbnail('https://cdn.discordapp.com/attachments/1234567890/1234567890/badge-icon.png') // Optional: Add badge icon
+        .setColor('#00D4AA')
+        .setThumbnail('https://cdn.discordapp.com/attachments/1395245783808348331/1398868945682956288/anime_girl__136_by_djtheng_dk3v5i9-fullview.jpg?ex=6886edba&is=68859c3a&hm=d7309e9e1739903a1691531b2038a6b47411392d05716d5bd8cde80d7dd86ec2&') 
         .setFooter({ 
-          text: '🔥 Active Developer Badge System | Made with ❤️ by Manish',
-          iconURL: 'https://cdn.discordapp.com/emojis/1234567890.png' // Optional: Add your icon
+          text: '🔥 Active Developer Badge bot | Made with ❤️ by Manish',
+          iconURL: 'https://cdn.discordapp.com/emojis/1384777634726285373.webp?size=160' 
         })
         .setTimestamp();
 
@@ -96,7 +96,7 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
       await interaction.reply({ 
         embeds: [embed], 
         components: [row],
-        ephemeral: false // kisi ko dikega nahi 
+        ephemeral: false 
       });
     });
 
