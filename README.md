@@ -20,7 +20,7 @@ To deploy:
 
 ## 🔗 Useful Links
 
-- [🔗 Tutorial video](soon)
+- [🔗 Tutorial video](https://youtu.be/3HjaQzfcXBI?si=qmztUD_UAWjDbx9m)
 
 
 - [💬 Join Discord](https://discord.gg/hZf4j8GzzK)
