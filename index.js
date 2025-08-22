@@ -93,38 +93,7 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
         **Congratulations!** Your 24-hour timer has been activated.
         
         ⏰ **Timer Ends:** ${timeLeft}
-        
-        Once the timer completes, click the button below to claim your **Active Developer Badge**!
         `)
-        .addFields(
-          { 
-            name: '📋 Instructions', 
-            value: `
-            • Wait for the full 24 hours to pass
-            • Click the "Claim Badge" button below
-            • Complete the verification process
-            • Enjoy your new badge! 🎉
-            `, 
-            inline: false 
-          },
-          { 
-            name: '⚡ Quick Links', 
-            value: `
-            🔗 [Developer Portal](https://discord.com/developers/applications)
-            📚 [Our website](https://roxy-selfbot.vercel.app/)
-            💡 [Support Server](https://discord.gg/hZf4j8GzzK)
-            `, 
-            inline: true 
-          },
-          { 
-            name: '🎯 Badge Benefits', 
-            value: `
-            ✨ Exclusive profile badge
-            🎖️ Community status
-            🚀 flex maybe
-            `, 
-            inline: true 
-          }
         )
         .setColor('#00D4AA')
         .setThumbnail('https://cdn.discordapp.com/attachments/1395245783808348331/1400354191624372375/0d02b202baf618dc122475bf70350fd9.png') 
